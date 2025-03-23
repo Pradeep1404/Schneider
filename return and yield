@@ -1,0 +1,18 @@
+ #return
+def product(a, b):
+    return a + b
+
+result = product("Mobile","Cable")
+print("product:", result)
+
+
+#yield
+def animalType():
+  yield "Animal"
+  yield "Coastal Fishes"
+  yield "Mammals"
+
+x = animalType()
+
+for y in x:
+  print(y)
