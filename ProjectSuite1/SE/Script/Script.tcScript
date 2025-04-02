@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="StepDefinitions_calc" key="{2BD9BA0E-D832-4504-B23C-D619B4CE8FB9}" path="StepDefinitions_calc.py" />
+		<child name="utility" key="{A7AA5D2E-273A-47F0-AEF3-D438BFC3856C}" path="utility.py" />
+		<child name="Calc" key="{DA258D55-03E7-403B-AF0E-B9486BC012CD}" path="Calc.py" />
+		<child name="paint" key="{4EE30039-3B3B-49F5-BF3A-88AD2881E0DA}" path="paint.py" />
+		<child name="Step_definition_paint" key="{AB170F32-9764-4BDC-859B-6430E5C4DF63}" path="Step_definition_paint.py" />
+	</children>
+</Root>

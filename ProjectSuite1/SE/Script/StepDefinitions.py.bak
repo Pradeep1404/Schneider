@@ -1,0 +1,11 @@
+﻿import calc
+
+@given("I have Launch calculator application")
+def step_impl():
+  calc.calc()
+  
+@when("I enter the Number1, Number2, Number3")
+def step_impl():
+  calc.num_pad
+
+  

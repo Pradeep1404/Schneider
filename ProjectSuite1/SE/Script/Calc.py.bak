@@ -1,0 +1,37 @@
+﻿def calc():
+  TestedApps.WindowsCalculator.Run()
+###############################################################################################################################################################################################  
+#name: Pradeep
+#Description: addition of 3 numbers
+#parameters:2+5+3
+def num_pad(param):
+  
+  num_pad = Sys.Process("Microsoft.WindowsCalculator").UIAObject("Calculator").UIAObject("NavView").UIAObject("LandmarkTarget").UIAObject("Number_pad")
+  num_buttons = num_pad.FindAllChildren("ClassName","Button",10)
+  for num_button in num_buttons:
+    if num_button.ObjectIdentifier == param:
+      num_button.Click()
+      Log.Message(f'{num_button.ObjectIdentifier} has been clicked')
+      break
+  else:
+    Log.Warning(f'{num_button.ObjectIdentifier} has not been clicked') 
+
+def oprators_pad(param):
+  operator_pad = Sys.Process("Microsoft.WindowsCalculator").UIAObject("Calculator").UIAObject("NavView").UIAObject("LandmarkTarget").UIAObject("Standard_operators")
+  operator_buttons = operator_pad.FindAllChildren("ClassName","Button",5)
+  for operator_button in operators_buttons:
+    if operator_button.ObjectIdentifier == param:
+      operator_button.Click()
+      Log.Message(f'{operator_button.ObjectIdentifier} has been clicked')
+      break
+  else:
+    Log.Warning(f'{operator_button.ObjectIdentifier} has not been clicked')
+    
+def arithmetic_oper():
+  num_pad("Two")
+  oprators_pad("Plus")
+  num_pad("Five")
+  oprators_pad("Plus")
+  num_pad("Three")
+  oprators_pad("Equals") 
+  

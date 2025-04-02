@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenarios>
+	<Feature Path="calc.feature.feature" />
+	<Feature Path="paint.feature.feature" />
+</Scenarios>
